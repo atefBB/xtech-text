@@ -27,9 +27,9 @@ export function f2(a, b) {
 	var b_occ = [];
 
 	b.forEach(function(x, i) {
-        b_occ[i] = a.filter(function(y) { 
+            b_occ[i] = a.filter(function(y) { 
         	return y === x; 
-        }).length;
+            }).length;
 	});
 
 	return b_occ;
@@ -48,10 +48,10 @@ export function f4(cb) {
 	this.isCalled = true;
    
 	setInterval(function() {
-    	if(this.isCalled) {
+    	    if(this.isCalled) {
     		cb();
-    	}
-    }, 300);
+    	    }
+        }, 300);
 };
 
 f4.prototype.isCalled = false;
